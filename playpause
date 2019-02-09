@@ -1,0 +1,10 @@
+#!/bin/bash
+
+path=/org/gnome/Shell
+interface=org.gnome.Shell
+member=AcceleratorActivated
+
+dbus-monitor "path=$path,interface=$interface,member=$member" |
+while read line; do
+    echo $line | grep 182 && xdotool key space
+done
