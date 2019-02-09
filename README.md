@@ -9,7 +9,9 @@ Whilst the script is running it will listen for dbus events, when it detects the
 To get started just clone the repo and run the script:
 
 `git clone https://github.com/amankhoza/gnome-headphone-play-pause-support-in-browser.git`
+
 `cd gnome-headphone-play-pause-support-in-browser`
+
 `./playpause`
 
 Then navigate to Netflix, YouTube etc. and try it out.
