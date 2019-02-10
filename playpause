@@ -6,5 +6,5 @@ member=AcceleratorActivated
 
 dbus-monitor "path=$path,interface=$interface,member=$member" |
 while read line; do
-    echo $line | grep "uint32 182" && xdotool key space
+    echo $line | grep "uint32 182" > /dev/null && xdotool key space
 done
